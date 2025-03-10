@@ -106,13 +106,13 @@ export const Hero = () => {
           </motion.p>
 
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <span className="block">Exploring the Frontiers of</span>
-            <span className="relative mt-6 block h-[1.8em]">
+            <span className="relative mt-4 sm:mt-6 block h-[1.8em]">
               <span className="text-gradient-blue inline-block min-w-[5px]">
                 {text}
               </span>
@@ -121,7 +121,7 @@ export const Hero = () => {
           </motion.h1>
 
           <motion.p
-            className="text-light-slate max-w-2xl text-lg md:text-xl mt-10"
+            className="text-light-slate max-w-2xl text-base md:text-lg lg:text-xl mt-6 sm:mt-10"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -132,26 +132,26 @@ export const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 mt-8"
+            className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto justify-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <a
               href="#about"
-              className="px-6 py-3 rounded-md bg-electric-blue text-navy font-medium hover:bg-electric-blue/90 transition-colors hover:scale-105 transform duration-300 shadow-neon-blue"
+              className="px-6 py-3 rounded-md bg-electric-blue text-navy font-medium hover:bg-electric-blue/90 transition-colors hover:scale-105 transform duration-300 shadow-neon-blue text-center"
             >
               Discover More
             </a>
             <a
               href="#projects"
-              className="px-6 py-3 rounded-md bg-transparent border border-electric-blue text-electric-blue font-medium hover:bg-electric-blue/10 transition-colors hover:scale-105 transform duration-300"
+              className="px-6 py-3 rounded-md bg-transparent border border-electric-blue text-electric-blue font-medium hover:bg-electric-blue/10 transition-colors hover:scale-105 transform duration-300 text-center"
             >
               View Projects
             </a>
             <a
               href="https://chat.whatsapp.com/CVISpJEYNSoG3hCo6GnEdA"
-              className="px-6 py-3 rounded-md bg-green-500 text-white font-medium hover:bg-green-600 transition-colors hover:scale-105 transform duration-300"
+              className="px-6 py-3 rounded-md bg-green-500 text-white font-medium hover:bg-green-600 transition-colors hover:scale-105 transform duration-300 text-center"
               target="_blank"
               rel="noopener noreferrer"
             >

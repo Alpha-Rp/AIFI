@@ -10,17 +10,17 @@ interface MemberCardProps {
 export const MemberCard = ({ name, image }: MemberCardProps) => {
   return (
     <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.2 }}>
-      <Card className=" w-[300px] bg-muted/50 hover:bg-muted/70 backdrop-blur-md border border-border/50 hover:border-primary/50 transition-all overflow-hidden">
-        <div className="w-full h-[300px] relative">
-          <img 
-            src={image || '/placeholder-image.jpg'} 
+      <Card className="w-full max-w-[300px] bg-dark-navy hover:bg-navy border border-electric-blue/30 hover:border-electric-blue/70 transition-all overflow-hidden shadow-lg">
+        <div className="w-full h-[250px] sm:h-[300px] relative">
+          <img
+            src={image || "/placeholder-image.jpg"}
             alt={name}
-            className="w-full h-[300px] object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <CardHeader className="text-center">
-          <CardTitle className="text-xl font-bold text-foreground">{name}</CardTitle>
-          <CardDescription className="text-muted-foreground/90 mt-1"></CardDescription>
+          <CardTitle className="text-xl font-bold text-white">{name}</CardTitle>
+          <CardDescription className="text-light-slate mt-1"></CardDescription>
         </CardHeader>
       </Card>
     </motion.div>

@@ -24,12 +24,12 @@ export const MembersSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background/50 backdrop-blur-sm relative">
-      <h2 className="text-4xl font-bold text-center mb-16 text-foreground">
+    <section className="py-24 pt-32 bg-navy/90 backdrop-blur-md relative">
+      <h2 className="text-4xl font-bold text-center mb-16 text-white">
         Our Coordinators
         <div className="mt-2 mx-auto w-24 h-1 bg-electric-blue rounded-full" />
       </h2>
-      <div className="flex justify-center items-center gap-8 max-w-7xl mx-auto px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
         {coordinators.map((coordinator, index) => (
           <motion.div
             key={index}
@@ -37,6 +37,7 @@ export const MembersSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
+            className="flex justify-center"
           >
             <MemberCard {...coordinator} />
           </motion.div>

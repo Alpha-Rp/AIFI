@@ -21,7 +21,7 @@ export const NavBar = () => {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Resources", href: "#resources" },
-    { name: "Events", href: "#events" }, // Added Events link
+    { name: "Events", href: "#events" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -30,10 +30,8 @@ export const NavBar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-navy/80 backdrop-blur-md py-3 shadow-md"
-          : "bg-transparent py-5"
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-dark-navy shadow-md",
+        isScrolled ? "py-3" : "py-5"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -44,10 +42,14 @@ export const NavBar = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="relative h-20 w-auto flex items-center">
-            <img src={Logo} alt="AIFI Club Logo" className="h-20 w-auto" />
+          <div className="relative h-16 sm:h-20 w-auto flex items-center">
+            <img
+              src={Logo}
+              alt="AIFI Club Logo"
+              className="h-16 sm:h-20 w-auto"
+            />
           </div>
-          <div className="flex items-center h-50">
+          <div className="flex items-center h-16 sm:h-20">
             <span className="font-space-grotesk mt-1">
               AIFI<span className="text-electric-blue">Club</span>
             </span>
@@ -89,7 +91,7 @@ export const NavBar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="fixed inset-0 top-16 bg-navy/95 backdrop-blur-md z-40 flex flex-col p-6 md:hidden"
+            className="fixed inset-0 top-16 bg-dark-navy z-40 flex flex-col p-6 md:hidden border-t border-electric-blue/30"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -100,7 +102,7 @@ export const NavBar = () => {
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="text-light-slate hover:text-electric-blue text-xl transition-colors duration-200 border-b border-light-navy/30 pb-2"
+                  className="text-white hover:text-electric-blue text-xl transition-colors duration-200 border-b border-light-navy/50 pb-2"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}

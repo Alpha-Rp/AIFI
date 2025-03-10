@@ -11,10 +11,14 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-2 text-white text-xl font-bold mb-4">
-              <div className="relative h-20 w-auto flex items-center">
-                <img src={Logo} alt="AIFI Club Logo" className="h-20 w-auto" />
+              <div className="relative h-16 sm:h-20 w-auto flex items-center">
+                <img
+                  src={Logo}
+                  alt="AIFI Club Logo"
+                  className="h-16 sm:h-20 w-auto"
+                />
               </div>
-              <div className="flex items-center h-20">
+              <div className="flex items-center h-16 sm:h-20">
                 <span className="font-space-grotesk mt-1">
                   AIFI<span className="text-electric-blue">Club</span>
                 </span>
@@ -176,10 +180,10 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-light-navy/30 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-light-slate text-sm">
+          <p className="text-light-slate text-sm text-center md:text-left">
             © {new Date().getFullYear()} AIFI Club. All rights reserved.
           </p>
-          <div className="flex gap-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-4 md:mt-0">
             <a
               href="#"
               className="text-light-slate hover:text-electric-blue transition-colors text-sm"
