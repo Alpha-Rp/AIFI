@@ -139,19 +139,19 @@ export const Hero = () => {
           >
             <a
               href="#about"
-              className="px-6 py-3 rounded-md bg-electric-blue text-navy font-medium hover:bg-electric-blue/90 transition-colors hover:scale-105 transform duration-300 shadow-neon-blue text-center"
+              className="px-6 py-3 rounded-md bg-electric-blue text-navy font-medium hover:bg-electric-blue/90 transition-colors hover:scale-105 transform duration-300 shadow-neon-blue text-center max-w-[160px] mx-auto sm:mx-0 w-full sm:w-auto"
             >
               Discover More
             </a>
             <a
               href="#projects"
-              className="px-6 py-3 rounded-md bg-transparent border border-electric-blue text-electric-blue font-medium hover:bg-electric-blue/10 transition-colors hover:scale-105 transform duration-300 text-center"
+              className="px-6 py-3 rounded-md bg-transparent border border-electric-blue text-electric-blue font-medium hover:bg-electric-blue/10 transition-colors hover:scale-105 transform duration-300 text-center max-w-[160px] mx-auto sm:mx-0 w-full sm:w-auto"
             >
               View Projects
             </a>
             <a
               href="https://chat.whatsapp.com/CVISpJEYNSoG3hCo6GnEdA"
-              className="px-6 py-3 rounded-md bg-green-500 text-white font-medium hover:bg-green-600 transition-colors hover:scale-105 transform duration-300 text-center"
+              className="px-6 py-3 rounded-md bg-green-500 text-white font-medium hover:bg-green-600 transition-colors hover:scale-105 transform duration-300 text-center max-w-[110px] mx-auto sm:mx-0 w-full sm:w-auto"
               target="_blank"
               rel="noopener noreferrer"
             >
