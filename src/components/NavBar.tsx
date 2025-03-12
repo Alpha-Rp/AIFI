@@ -30,8 +30,10 @@ export const NavBar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-dark-navy shadow-md",
-        isScrolled ? "py-3" : "py-5"
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+        isScrolled
+          ? "bg-dark-navy/90 backdrop-blur-md py-3 shadow-md"
+          : "bg-transparent py-5"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
